@@ -1,0 +1,21 @@
+!/bin/bash 
+#Author :  @offensivekernel 
+#LinkedIn : https://www.linkedin.com/in/offensivekernel/ 
+#Note : This script is free to modify and use as per the requirement, non of the rights are reserved! 
+echo "upgrading your system to the best!" 
+sleep 2 
+echo "updating the repositories" 
+apt update 
+sleep 1 
+echo "let's update the packages now" 
+sleep 2 
+apt upgrade -y 
+sleep 2 
+echo "Now, it's time for kernel modules to be upgraded" 
+apt dist-upgrade -y 
+sleep 2 
+echo "Great, Now let's remove unwanted things aside" 
+apt autoremove -y 
+apt clean 
+echo "SYSTEM is Ready to ROCK!!!" 
+sleep 2
